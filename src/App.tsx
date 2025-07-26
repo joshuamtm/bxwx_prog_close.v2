@@ -75,7 +75,7 @@ const AppRoutes: React.FC = () => {
 function App() {
   return (
     <AuthProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <div className="App">
           <AppRoutes />
           <Toaster
