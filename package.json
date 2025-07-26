@@ -16,6 +16,7 @@
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --coverage",
     "deploy": "npm run build && echo 'Build complete. Ready for deployment.'",
+    "deploy:netlify": "npm run build && npx netlify-cli deploy --prod --dir=dist",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\""
   },
   "dependencies": {
